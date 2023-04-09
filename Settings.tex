@@ -1,0 +1,128 @@
+% ----------------------------------------------------- 
+%	加边框的命令
+%	参考：https://tex.stackexchange.com/questions/531559/how-to-add-the-page-border-for-first-two-pages-in-latex
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{eso-pic}
+\AddToShipoutPictureBG{%
+\begin{tikzpicture}[overlay,remember picture]
+\draw[line width=0.6pt] % 边框粗细
+    ($ (current page.north west) + (0.6cm,-0.6cm) $)
+    rectangle
+    ($ (current page.south east) + (-0.6cm,0.6cm) $); % 边框位置
+\end{tikzpicture}}
+
+
+\usepackage{xcolor}
+\definecolor{c1}{HTML}{2752C9} % 目录颜色
+\definecolor{c2}{RGB}{190,20,83} % 引用颜色
+
+\usepackage{ctex}
+\usepackage[top=28mm,bottom=28mm,left=15mm,right=15mm]{geometry}
+\usepackage{hyperref} 
+\hypersetup{
+	colorlinks,
+	linktoc = section, % 超链接位置，选项有section, page, all
+	linkcolor = c1, % linkcolor 目录颜色
+	citecolor = c1  % citecolor 引用颜色
+}
+\usepackage{amsmath,enumerate,multirow,float}
+\usepackage{tabularx}
+\usepackage{tabu}
+\usepackage{subfig}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{wrapfig}  
+\usepackage{physics}
+\usepackage{appendix}
+\usepackage{amsfonts}
+
+%
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\newtcolorbox{tbox}[2][]{
+    colframe=black!70!,
+    breakable,
+    enhanced,
+	boxrule =0.5pt,
+    title = {#2},
+    fonttitle = \large\kaishu\bfseries,
+	drop fuzzy shadow,
+    #1
+}
+\newtcolorbox[auto counter,number within=section]{question}[1][]{
+  top=2pt,bottom=2pt,arc=1mm,
+  boxrule=0.5pt,
+%   frame hidden,
+  breakable,
+  enhanced, %跨页后不会显示下边框
+  coltitle=c1!80!gray,
+  colframe=c1,
+  colback=c1!3!white,
+  drop fuzzy shadow,
+  title={思考题~\thetcbcounter：\quad},
+  fonttitle=\bfseries,
+  attach title to upper,
+  #1
+}
+
+% ---------------------------------------------------------------------
+%	利用cleveref改变引用格式，\cref是引用命令
+\usepackage{cleveref}
+\crefformat{figure}{#2{\textcolor{c2}{图 #1}}#3} % 图片的引用格式
+\crefformat{equation}{#2{(\textcolor{c2}{#1})}#3} % 公式的引用格式
+\crefformat{table}{#2{\textcolor{c2}{表 #1}}#3} % 表格的引用格式
+
+
+% ---------------------------------------------------------------------
+%	页眉页脚设置
+\fancypagestyle{plain}{\pagestyle{fancy}}
+\pagestyle{fancy}
+\lhead{\kaishu 中山大学物理与天文学院物理实验\uppercase\expandafter{\romannumeral3}} % 左边页眉，学院 + 课程
+\rhead{\kaishu Template 实验报告模板} % 右边页眉，实验报告标题
+\cfoot{\thepage} % 页脚，中间添加页码
+
+
+% ---------------------------------------------------------------------
+%	对目录、章节标题的设置
+\renewcommand{\contentsname}{\centerline{\huge 目录}}
+\usepackage{titlesec}
+\usepackage{titletoc}
+% \titleformat{章节}[形状]{格式}{标题序号}{序号与标题间距}{标题前命令}[标题后命令]
+\titleformat{\section}{\centering\LARGE\songti}{}{1em}{}
+
+% ---------------------------------------------------------------------
+%   listing代码环境设置
+\usepackage{listings}
+\lstloadlanguages{python}
+\lstdefinestyle{pythonstyle}{
+backgroundcolor=\color{gray!5},
+language=python,
+frameround=tftt,
+frame=shadowbox, 
+keepspaces=true,
+breaklines,
+columns=spaceflexible,                   
+basicstyle=\ttfamily\small, % 基本文本设置，字体为teletype，大小为scriptsize
+keywordstyle=[1]\color{c1}\bfseries, 
+keywordstyle=[2]\color{Red!70!black},   
+stringstyle=\color{Purple},       
+showstringspaces=false,
+commentstyle=\ttfamily\scriptsize\color{green!40!black},%注释文本设置，字体为sf，大小为smaller
+tabsize=2,
+morekeywords={as},
+morekeywords=[2]{np, plt, sp},
+numbers=left, % 代码行数
+numberstyle=\it\tiny\color{gray}, % 代码行数的数字字体设置
+stepnumber=1,
+rulesepcolor=\color{gray!30!white}
+}
+
+
+
+
+% ---------------------------------------------------------------------
+%	其他设置
+\def\degree{${}^{\circ}$} % 角度
+\graphicspath{{./images/}} % 插入图片的相对路径
+\allowdisplaybreaks[4]  %允许公式跨页
