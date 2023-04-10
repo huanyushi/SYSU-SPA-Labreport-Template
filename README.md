@@ -22,7 +22,7 @@ Demo和源码可在 [release](https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-T
 * 分析与讨论
 
 在此前的实验报告基础上我增加了以下几个内容：
-* **参考文献**，注明引用内容是是作者对他人知识成果的承认和尊重，是保证学术诚信必需养成的习惯，不可缺失：
+* **参考文献**，注明引用内容是是作者对他人知识成果的承认和尊重，是保证学术诚信必须养成的习惯，不可缺失：
 
 <img src="https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-Template/blob/main/images/readme1.JPG" width="60%" />
 
@@ -38,7 +38,7 @@ Demo和源码可在 [release](https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-T
 
 # 一些注意事项
 1. 参考文献应导入`bib`文件中，编译顺序请按`xelatex`->`bibtex`->`xelatex`->`xelatex`；
-2. `lstlisting`代码环境配置如下，可更改为其他语言，其他相关配置可参考`listings`宏包的手册，
+2. `lstlisting`代码环境配置如下，导入的是`Python`语言，可手动更改或添加其他程序语言，其他相关配置可参考`listings`宏包的手册，
 ```latex
 \usepackage{listings}
 
@@ -102,4 +102,5 @@ rulesepcolor=\color{gray!30!white}
 # 声明
 * 本模板仅供学习交流所用，非学院官方模板。
 * 本模板不再进行更新维护，若有任何额外需求请自行设计更改。
+* **欢迎报考中山大学物理与天文学院**。
 
