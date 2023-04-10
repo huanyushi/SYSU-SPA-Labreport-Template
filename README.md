@@ -10,7 +10,7 @@
 
 临近毕业，我发现此模板在学院内部仍有流传，但毕竟当时写就并不规范，且功能有诸多缺失。考虑到种种原因，**我决定将此模板进行更新完善并打包公布在Github和知乎上**，希望有助于后辈学子，同时也希望对其他兄弟院校的同学有一定参考和帮助作用。
 	
-Demo和源码可在[release](https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-Template/releases)上下载。
+Demo和源码可在 [release](https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-Template/releases) 上下载。
 
 同时，也欢迎访问我的[知乎个人主页](https://www.zhihu.com/people/za-ran-zhu-fu-liu-xing)
 
