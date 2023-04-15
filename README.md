@@ -15,6 +15,8 @@ Demo和源码可在 [release](https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-T
 同时，也欢迎访问我的[知乎个人主页](https://www.zhihu.com/people/za-ran-zhu-fu-liu-xing)
 
 # 模板功能说明
+
+### 更新内容
 本模板经过更新完善后，除几个必要的实验报告部分：
 * 扉页
 * 预习报告
@@ -36,7 +38,7 @@ Demo和源码可在 [release](https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-T
 
 <img src="https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-Template/blob/main/images/readme5.JPG" width="100%" />
 
-# 一些注意事项
+# 注意事项
 1. 参考文献应导入`bib`文件中，编译顺序请按`xelatex`->`bibtex`->`xelatex`->`xelatex`；
 2. `lstlisting`代码环境配置如下，导入的是`Python`语言，可手动更改或添加其他程序语言，其他相关配置可参考`listings`宏包的手册，
 ```latex
