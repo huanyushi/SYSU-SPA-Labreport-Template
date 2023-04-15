@@ -12,7 +12,7 @@
 	
 Demo和源码可在 [release](https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-Template/releases) 上下载。
 
-同时，也欢迎访问我的[知乎个人主页](https://www.zhihu.com/people/za-ran-zhu-fu-liu-xing)
+同时，也欢迎访问我的 [blog](https://huanyushi.github.io/)
 
 # 模板功能说明
 
@@ -26,27 +26,17 @@ Demo和源码可在 [release](https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-T
 在此前的实验报告基础上我增加了以下几个内容：
 * **参考文献**，注明引用内容是是作者对他人知识成果的承认和尊重，是保证学术诚信必须养成的习惯，不可缺失：
 
-<img src="https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-Template/blob/main/images/readme1.JPG" width="100%" />
-
 * **代码附录**，给出了使用Lstlisting环境展示实验报告中所用代码的示例：
-<img src="https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-Template/blob/main/images/readme2.JPG" width="100%" />
 
 * **常用命令展示**，鉴于部分学生初次接触 $\LaTeX$，本模板也给出了相应的常用命令展示以方便查阅。
-<img src="https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-Template/blob/main/images/readme3.JPG" width="100%" />
 
-<img src="https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-Template/blob/main/images/readme4.JPG" width="100%" />
-
-<img src="https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-Template/blob/main/images/readme5.JPG" width="100%" />
-
-# 注意事项
+### 注意事项
 1. 参考文献应导入`bib`文件中，编译顺序请按`xelatex`->`bibtex`->`xelatex`->`xelatex`；
 2. `lstlisting`代码环境配置如下，导入的是`Python`语言，可手动更改或添加其他程序语言，其他相关配置可参考`listings`宏包的手册，
 ```latex
 \usepackage{listings}
-
 \definecolor{c1}{HTML}{2752C9} % 定义的颜色
 \lstloadlanguages{python}
-
 \lstdefinestyle{pythonstyle}{
 backgroundcolor=\color{gray!5},
 language=python,
@@ -70,6 +60,7 @@ stepnumber=1,
 rulesepcolor=\color{gray!30!white}
 }
 ```
+![](https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-Template/blob/main/images/readme1.JPG)
 3. 本模板定义了两种形式的`box`，可参考`tcolorbox`宏包的手册进行修改，
 ```latex
 \usepackage{tcolorbox}
@@ -78,10 +69,10 @@ rulesepcolor=\color{gray!30!white}
   colframe=black!70!,
   breakable,
   enhanced,
-	boxrule =0.5pt,
+  boxrule =0.5pt,
   title = {#2},
   fonttitle = \large\kaishu\bfseries,
-	drop fuzzy shadow,
+  drop fuzzy shadow,
   #1
 }
 \newtcolorbox[auto counter,number within=section]{question}[1][]{
@@ -99,7 +90,7 @@ rulesepcolor=\color{gray!30!white}
   #1
 }
 ```
-<img src="https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-Template/blob/main/images/readme6.JPG" width="100%" />
+![](https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-Template/blob/main/images/readme2.JPG)
 
 # 声明
 * 本模板仅供学习交流所用，非学院官方模板。
