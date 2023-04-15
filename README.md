@@ -60,7 +60,7 @@ stepnumber=1,
 rulesepcolor=\color{gray!30!white}
 }
 ```
-![](https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-Template/blob/main/images/readme1.JPG)
+![](https://github.com/huanyushi/SYSU-SPA-Labreport-Template/blob/main/images/readme1.jpg)
 3. 本模板定义了两种形式的`box`，可参考`tcolorbox`宏包的手册进行修改，
 ```latex
 \usepackage{tcolorbox}
@@ -90,7 +90,7 @@ rulesepcolor=\color{gray!30!white}
   #1
 }
 ```
-![](https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-Template/blob/main/images/readme2.JPG)
+![](https://github.com/huanyushi/SYSU-SPA-Labreport-Template/blob/main/images/readme2.jpg)
 
 # 声明
 * 本模板仅供学习交流所用，非学院官方模板。
