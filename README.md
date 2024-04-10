@@ -2,7 +2,9 @@
 
 # SYSU-SPA-Labreport-Template
 
-<b>中山大学物理与天文学院本科实验报告LaTeX模板</b>
+<b>中山大学物理与天文学院本科实验报告LaTeX模板</b> 
+
+<b><a href='README_EN.md'>English version</a></b> 
 
 ![GitHub license](https://img.shields.io/github/license/huanyushi/SYSU-SPA-labreport-Template.svg) ![Github Version](https://img.shields.io/github/release/huanyushi/SYSU-SPA-labreport-Template.svg)
 <p align = "center">
@@ -68,7 +70,7 @@ rulesepcolor=\color{gray!30!white}
 }
 ```
 ![](images/readme1.jpg)
-1. 本模板定义了两种形式的`box`，可参考`tcolorbox`宏包的手册进行修改，
+3. 本模板定义了两种形式的`box`，可参考`tcolorbox`宏包的手册进行修改，
 ```latex
 \usepackage{tcolorbox}
 \tcbuselibrary{skins,breakable}
