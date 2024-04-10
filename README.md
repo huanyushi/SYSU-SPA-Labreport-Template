@@ -1,8 +1,14 @@
+<div align='center'>
+
 # SYSU-SPA-Labreport-Template
-**中山大学物理与天文学院本科实验报告LaTeX模板**
+
+<b>中山大学物理与天文学院本科实验报告LaTeX模板</b>
+
+![GitHub license](https://img.shields.io/github/license/huanyushi/SYSU-SPA-labreport-Template.svg) ![Github Version](https://img.shields.io/github/release/huanyushi/SYSU-SPA-labreport-Template.svg)
 <p align = "center">
-<img src="https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-Template/blob/main/images/example.png" width="20%" />
-<p>
+<img src="images/example.png" width="20%" />
+</p>
+</div>
 
 大家好，我是来自于物理与天文学院2019级物理系的本科生Huanyu Shi。
 
@@ -10,11 +16,12 @@
 
 临近毕业，我发现此模板在学院内部仍有流传，但毕竟当时写就并不规范，且功能有诸多缺失。考虑到种种原因，**我决定将此模板进行更新完善并打包公布在 GitHub 和知乎上**，希望有助于后辈学子，同时也希望对其他兄弟院校的同学有一定参考和帮助作用。
 	
-Demo 和源码可在 [release](https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-Template/releases) 上下载。
+Demo 请见 [PDF](https://huanyushi.github.io/pdf/SYSU-SPA-LabReport-Template.pdf) ，源码可在 [release](https://github.com/huanyushi/SYSU-SPA-Labreport-Template/releases) 上下载。
+
 
 同时，也欢迎访问我的 [blog](https://huanyushi.github.io/)
 
-# 模板功能说明
+## 模板功能说明
 
 ### 更新内容
 本模板经过更新完善后，除几个必要的实验报告部分：
@@ -26,9 +33,9 @@ Demo 和源码可在 [release](https://github.com/Huanyu-Shi/SYSU-SPA-Labreport-
 在此前的实验报告基础上我增加了以下几个内容：
 * **参考文献**，注明引用内容是是作者对他人知识成果的承认和尊重，是保证学术诚信必须养成的习惯，不可缺失：
 
-* **代码附录**，给出了使用Lstlisting环境展示实验报告中所用代码的示例：
+* **代码附录**，给出了使用 Lstlisting 环境展示实验报告中所用代码的示例：
 
-* **常用命令展示**，鉴于部分学生初次接触 $\LaTeX$，本模板也给出了相应的常用命令展示以方便查阅。
+* **常用命令展示**，鉴于部分学生初次接触 LaTeX，本模板也给出了相应的常用命令展示以方便查阅。
 
 ### 注意事项
 1. 参考文献应导入`bib`文件中，编译顺序请按`xelatex`->`bibtex`->`xelatex`->`xelatex`；
@@ -60,8 +67,8 @@ stepnumber=1,
 rulesepcolor=\color{gray!30!white}
 }
 ```
-![](https://github.com/huanyushi/SYSU-SPA-Labreport-Template/blob/main/images/readme1.jpg)
-3. 本模板定义了两种形式的`box`，可参考`tcolorbox`宏包的手册进行修改，
+![](images/readme1.jpg)
+1. 本模板定义了两种形式的`box`，可参考`tcolorbox`宏包的手册进行修改，
 ```latex
 \usepackage{tcolorbox}
 \tcbuselibrary{skins,breakable}
@@ -90,10 +97,14 @@ rulesepcolor=\color{gray!30!white}
   #1
 }
 ```
-![](https://github.com/huanyushi/SYSU-SPA-Labreport-Template/blob/main/images/readme2.jpg)
+![](images/readme2.jpg)
+4. TikZ 作为一个知名的绘图宏包（其文档说明高达1000多页，超乎常人想象），在此补充了一些 TikZ 实例
+![](images/readme3.JPG)
 
-# 声明
+## 声明
 * 本模板仅供学习交流所用，非学院官方模板。
 * 本模板不再进行更新维护，若有任何额外需求请自行设计更改。
 * **欢迎报考中山大学物理与天文学院**。
 
+## 许可证
+该项目是在 MIT 许可下发布的。

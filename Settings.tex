@@ -18,7 +18,7 @@
 \definecolor{c2}{RGB}{190,20,83} % 引用颜色
 
 \usepackage{ctex}
-\usepackage[top=28mm,bottom=28mm,left=15mm,right=15mm]{geometry}
+\usepackage[top=28mm,bottom=28mm,left=15mm,right=15mm]{geometry} % 调整边距
 \usepackage{hyperref} 
 \hypersetup{
 	colorlinks,
@@ -36,8 +36,12 @@
 \usepackage{physics}
 \usepackage{appendix}
 \usepackage{amsfonts}
+\usepackage{annotate-equations} % 公式标注
+\usepackage{pgfplots}
 
-%
+
+% ---------------------------------------------------------------------
+%	定义了两类colorbox
 \usepackage{tcolorbox}
 \tcbuselibrary{skins,breakable}
 \newtcolorbox{tbox}[2][]{
@@ -46,7 +50,7 @@
     enhanced,
 	boxrule =0.5pt,
     title = {#2},
-    fonttitle = \large\kaishu\bfseries,
+    fonttitle = \large\bfseries,
 	drop fuzzy shadow,
     #1
 }
@@ -81,7 +85,7 @@
 \lhead{\kaishu 中山大学物理与天文学院物理实验\uppercase\expandafter{\romannumeral3}} % 左边页眉，学院 + 课程
 \rhead{\kaishu Template 实验报告模板} % 右边页眉，实验报告标题
 \cfoot{\thepage} % 页脚，中间添加页码
-
+\setlength{\headheight}{13.6pt}
 
 % ---------------------------------------------------------------------
 %	对目录、章节标题的设置
@@ -89,7 +93,10 @@
 \usepackage{titlesec}
 \usepackage{titletoc}
 % \titleformat{章节}[形状]{格式}{标题序号}{序号与标题间距}{标题前命令}[标题后命令]
-\titleformat{\section}{\centering\LARGE\songti}{}{1em}{}
+\titleformat{\section}{\centering\LARGE}{}{1em}{}
+\newcommand{\nsection}[3]{%
+    \section{#1 #2 \hspace{11pt} \textbf{#3}}%
+}
 
 % ---------------------------------------------------------------------
 %   listing代码环境设置
@@ -119,10 +126,41 @@ rulesepcolor=\color{gray!30!white}
 }
 
 
-
+% ---------------------------------------------------------------------
+%	将表格封装起来
+\newcommand{\scoresTable}[8]{
+    \begin{table}
+        \renewcommand\arraystretch{1.7}
+        \begin{tabularx}{\textwidth}{
+                |X|X|X|X
+                |X|X|X|X|}
+            \hline
+            \multicolumn{2}{|c|}{预习报告} & \multicolumn{2}{|c|}{实验记录} & \multicolumn{2}{|c|}{分析讨论} & \multicolumn{2}{|c|}{总成绩} \\
+            \hline
+            \centering#1&\centering#2 &\centering#3 &\centering#4 &\centering#5 &\centering#6 &\centering#7 &{\centering#8} \\
+            \hline
+        \end{tabularx}
+    \end{table}
+}
+\newcommand{\infoTable}[6]{
+    \begin{table}
+        \renewcommand\arraystretch{1.7}
+        \begin{tabularx}{\textwidth}{|X|X|X|X|}
+        \hline
+        专业：& #1 &年级：& #2\\
+        \hline
+        姓名：& #3   & 学号：&#4\\
+        \hline
+        实验时间：&#5 & 教师签名：&#6 \\
+        \hline
+        \end{tabularx}
+    \end{table}
+}
 
 % ---------------------------------------------------------------------
 %	其他设置
 \def\degree{${}^{\circ}$} % 角度
 \graphicspath{{./images/}} % 插入图片的相对路径
 \allowdisplaybreaks[4]  %允许公式跨页
+
+\usetikzlibrary{patterns,decorations.markings,arrows.meta,bending}
