@@ -12,11 +12,11 @@
 
 Hello everyone, I am Huanyu Shi, an undergraduate student majoring in physics from School of Physics and Astronomy, class of 2019.
 
-The inspiration for this template came to me during my sophomore year when I found the provided Word template for writing lab reports by the college to be rudimentary, inefficient, and not aesthetically pleasing. Therefore, I decided to create this LaTeX template based on the format provided by the college, but with improvements.
+The inspiration for this template came to me during my sophomore year when I found the Word template provided by the college for writing lab reports to be rudimentary, inefficient, and aesthetically unpleasing. Therefore, I decided to create this LaTeX template based on the format provided by the college, but with improvements.
 
-As graduation approaches, I've realized that this template is still being circulated within the college. However, it was not standardized when I initially created it, and it lacked many features. **Taking all this into consideration, I have decided to update and improve this template and publish it on GitHub and Zhihu**. My hope is that it will be helpful to future students and also serve as a reference for students from other colleges.
+As graduation approaches, I've realized that this template is still in circulation within the college. However, it was not standardized when I initially created it, and it lacked many features. **Taking all this into consideration, I have decided to update and improve this template and publish it on GitHub and Zhihu**. My hope is that it will be helpful to future students and also serve as a reference for students from other colleges."
 
-You can find the [demo PDF here](https://huanyushi.github.io/pdf/SYSU-SPA-LabReport-Template.pdf) and download the source code from the [release page](https://github.com/huanyushi/SYSU-SPA-Labreport-Template/releases).
+You can find the [demo PDF here](https://huanyushi.github.io/assets/pdf/SYSU-SPA-LabReport-Template.pdf) and download the source code from the [release page](https://github.com/huanyushi/SYSU-SPA-Labreport-Template/releases).
 
 Also, welcome to visit my [blog](https://huanyushi.github.io/).
 
@@ -33,15 +33,16 @@ After updating and improving the template, in addition to the essential sections
 
 I have added the following content:
 
-- **References**, which acknowledge the use of others' knowledge and are essential for maintaining academic integrity.
+- **References**: Acknowledging the use of others' knowledge is crucial for maintaining academic integrity.
 
-- **Code Appendix**, providing examples of using the Lstlisting environment to display code used in the lab report.
+- **Code Appendix**: This section provides examples of using the Lstlisting environment to display code used in the lab report.
 
-- **Common Commands Display**, as some students may be new to LaTeX, this template also provides a display of commonly used commands for easy reference.
+- **Common Commands Display**:  Since some students may be new to LaTeX, this template also includes a display of commonly used commands for easy reference.
+
 
 ### Notes
-1. References should be imported into a `bib` file, and the compilation sequence should follow `xelatex `-> `bibtex` -> `xelatex` -> `xelatex`.
-2. Configuration for the lstlisting code environment is as follows, importing code in the Python language. You can manually change or add other programming languages, and refer to the manual of the listings package for other related configurations.
+1. References should be imported into the `bib` file, and the compilation sequence should follow `xelatex `-> `bibtex` -> `xelatex` -> `xelatex`. If you want to adjust the style of the references, you only need to modify the `\bibliography{}` command in `main.tex`.
+2. The configuration for the lstlisting code environment is as follows, with code imported in the Python language.  You can manually change or add other programming languages, and consult the listings package manual for further configurations.
 ```latex
 \usepackage{listings}
 \definecolor{c1}{HTML}{2752C9} % defined color
@@ -54,17 +55,17 @@ frame=shadowbox,
 keepspaces=true,
 breaklines,
 columns=spaceflexible,
-basicstyle=\ttfamily\small, % basic text settings, font is teletype, size is scriptsize
+basicstyle=\ttfamily\small, % basic text settings, font is teletype, size is small
 keywordstyle=[1]\color{c1}\bfseries,
 keywordstyle=[2]\color{Red!70!black},
 stringstyle=\color{Purple},
 showstringspaces=false,
-commentstyle=\ttfamily\scriptsize\color{green!40!black},% comment text setting, font is sf, size is smaller
+commentstyle=\ttfamily\scriptsize\color{green!40!black}, % comment text setting, font is teletype, size is scriptsize
 tabsize=2,
 morekeywords={as},
 morekeywords=[2]{np, plt, sp},
 numbers=left, % number of lines of code
-numberstyle=\it\tiny\color{gray}, % Number font setting for the number of lines of code
+numberstyle=\it\tiny\color{gray}, % number font
 stepnumber=1,
 rulesepcolor=\color{gray!30!white}
 }
