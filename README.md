@@ -12,21 +12,19 @@
 </p>
 </div>
 
-大家好，我是来自于物理与天文学院2019级物理系的本科生 Huanyu Shi。
+大家好，我是中山大学物理与天文学院 2019 级物理系本科生 Huanyu Shi。
 
-本模板源于我大二一时兴起所做。对于撰写实验报告，学院只提供了简陋的 word 模板，使用 word 效率低下且排版效果不甚理想。于是我仿照学院提供的模板格式，在其基础上完成了此 LaTeX 模板。
+这份模板源于我大二一时兴起所做。学院当时提供的实验报告模板仅限于简单的 Word 文件，而 Word 在编辑效率和排版美观方面都存在一定的不足。基于学院模板的基本格式，我设计并完成了这个 LaTeX 模板，以提高报告的撰写效率和呈现效果。
 
-临近毕业，我发现此模板在学院内部仍有流传，但毕竟当时写就并不规范，且功能有诸多缺失。考虑到种种原因，**我决定将此模板进行更新完善并打包公布在 GitHub 和知乎上**，希望有助于后辈学子，同时也希望对其他兄弟院校的同学有一定参考和帮助作用。
+临近毕业，我偶然发现此模板在学院内部仍有流传，但毕竟当时制作中并不规范，功能上也有不足之处。考虑到种种原因，**我决定将此模板进行更新完善并打包公布在 GitHub 和知乎上**，方便有需要的同学参考使用。希望它不仅能为本学院的后辈学子提供帮助，也能为其他院校的同学提供一些参考借鉴。
 	
-Demo 请见 [PDF](https://huanyushi.github.io/assets/pdf/SYSU-SPA-LabReport-Template.pdf) ，源码可在 [release](https://github.com/huanyushi/SYSU-SPA-Labreport-Template/releases) 上下载。
+模板 Demo 请见 [PDF](https://huanyushi.github.io/assets/pdf/SYSU-SPA-LabReport-Template.pdf) ，源码可在 [release](https://github.com/huanyushi/SYSU-SPA-Labreport-Template/releases) 上下载。
 
+## 1. 模板功能说明
 
-同时，也欢迎访问我的 [blog](https://huanyushi.github.io/)
+### 1.1. 更新内容
 
-## 模板功能说明
-
-### 更新内容
-本模板经过本次更新后，除几个必要的实验报告部分：
+这份模板经过本次更新后，除几个必要的实验报告部分：
 * 扉页
 * 预习报告
 * 实验记录
@@ -39,9 +37,9 @@ Demo 请见 [PDF](https://huanyushi.github.io/assets/pdf/SYSU-SPA-LabReport-Temp
 
 * **常用命令展示**，鉴于部分学生初次接触 LaTeX，本模板也给出了相应的常用命令展示以方便查阅。
 
-### 注意事项
+### 1.2. 注意事项
 1. 参考文献应导入 `bib` 文件中，编译顺序请按 `xelatex` -> `bibtex` -> `xelatex` -> `xelatex`， 若要调整参考文献的格式在 `main.tex` 中修改 `\bibliographystyle{}` 即可；
-2. `lstlisting` 代码环境配置如下，导入的是 `Python` 语言，可手动更改或添加其他程序语言，其他相关配置可参考 `listings` 宏包的手册，
+2. `lstlisting` 代码环境配置示例如下，其中导入的是 `Python` 语言，可手动更改或添加其他程序语言，其他相关配置可参考 `listings` 宏包的手册，
 ```latex
 \usepackage{listings}
 \definecolor{c1}{HTML}{2752C9} % 定义的颜色
@@ -100,13 +98,13 @@ rulesepcolor=\color{gray!30!white}
 }
 ```
 ![](images/readme2.jpg)
-4. TikZ 是一个知名的绘图宏包（其文档说明高达1000多页，超乎常人想象），在此补充了一些 TikZ 实例
+1. TikZ 是一个知名的绘图宏包（不过它的文档说明高达 1000 多页，学习成本略高），在此补充了一些 TikZ 实例
 ![](images/readme3.JPG)
 
-## 声明
+## 2. 声明
 * 本模板仅供学习交流所用，非学院官方模板。
 * 本模板不再进行更新维护，若有任何额外需求请自行设计更改。
 * **欢迎报考中山大学物理与天文学院**。
 
-## 许可证
+## 3. 许可证
 该项目是在 MIT 许可下发布的。
