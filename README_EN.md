@@ -10,20 +10,18 @@
 </p>
 </div>
 
-Hello everyone, I am Huanyu Shi, an undergraduate student majoring in physics from School of Physics and Astronomy, class of 2019.
+Hi, I am Huanyu Shi, an undergraduate student majoring in physics from School of Physics and Astronomy at Sun Yat-sen university, class of 2019.
 
 The inspiration for this template came to me during my sophomore year when I found the Word template provided by the college for writing lab reports to be rudimentary, inefficient, and aesthetically unpleasing. Therefore, I decided to create this LaTeX template based on the format provided by the college, but with improvements.
 
-As graduation approaches, I've realized that this template is still in circulation within the college. However, it was not standardized when I initially created it, and it lacked many features. **Taking all this into consideration, I have decided to update and improve this template and publish it on GitHub and Zhihu**. My hope is that it will be helpful to future students and also serve as a reference for students from other colleges."
+
+As graduation approaches, I've realized that this template is still in circulation within the college. However, since the initial version was rather rudimentary and lacked certain features, **I have decided to refine and enhance it, making it available on GitHub and Zhihu for anyone who may find it useful.** I hope it will not only benefit students in our department but also provide a helpful reference for students from other institutions.
 
 You can find the [demo PDF here](https://huanyushi.github.io/assets/pdf/SYSU-SPA-LabReport-Template.pdf) and download the source code from the [release page](https://github.com/huanyushi/SYSU-SPA-Labreport-Template/releases).
 
-Also, welcome to visit my [blog](https://huanyushi.github.io/).
+## 1. Template Functionality Overview
 
-
-## Template Functionality Overview
-
-### Updates
+### 1.1. Updates
 After updating and improving the template, in addition to the essential sections of a lab report:
 
 - Cover Page
@@ -40,7 +38,7 @@ I have added the following content:
 - **Common Commands Display**:  Since some students may be new to LaTeX, this template also includes a display of commonly used commands for easy reference.
 
 
-### Notes
+### 1.2. Notes
 1. References should be imported into the `bib` file, and the compilation sequence should follow `xelatex `-> `bibtex` -> `xelatex` -> `xelatex`. If you want to adjust the style of the references, you only need to modify the `\bibliography{}` command in `main.tex`.
 2. The configuration for the lstlisting code environment is as follows, with code imported in the Python language.  You can manually change or add other programming languages, and consult the listings package manual for further configurations.
 ```latex
@@ -101,13 +99,13 @@ rulesepcolor=\color{gray!30!white}
 }
 ```
 ![](images/readme2.jpg)
-4. TikZ is a well-known drawing macro package (its documentation reaches more than 1,000 pages, which is beyond ordinary people's imagination). Here are some TikZ examples.
+1. TikZ is a well-known drawing package (though its documentation is over 1,000 pages long, making it somewhat challenging to learn). Here, I have included some TikZ examples as a supplement.
 ![](images/readme3.JPG)
 
-## Statement
+## 2. Statement
 * This template is for learning and communication only and is not the official template of the college.
 * This template will no longer be updated and maintained. If you have any additional needs, please design and change it yourself.
 * **Welcome to apply to the School of Physics and Astronomy, Sun Yat-sen University**.
 
-## License
+## 3. License
 This project is released under the MIT license.

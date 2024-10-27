@@ -47,7 +47,7 @@
 \newtcolorbox{tbox}[2][]{
     colframe=black!70!,
     breakable,
-    enhanced,
+    enhanced, % 跨页后不会显示下边框
     boxrule =0.5pt,
     title = {#2},
     fonttitle = \large\bfseries,
@@ -75,7 +75,6 @@
 \crefformat{figure}{#2{\textcolor{c2}{图 #1}}#3} % 图片的引用格式
 \crefformat{equation}{#2{(\textcolor{c2}{#1})}#3} % 公式的引用格式
 \crefformat{table}{#2{\textcolor{c2}{表 #1}}#3} % 表格的引用格式
-
 
 % ---------------------------------------------------------------------
 %	页眉页脚设置
