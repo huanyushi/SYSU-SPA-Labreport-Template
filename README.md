@@ -18,7 +18,7 @@
 
 临近毕业，我偶然发现此模板在学院内部仍有流传，但毕竟当时制作中并不规范，功能上也有不足之处。考虑到种种原因，**我决定将此模板进行更新完善并打包公布在 GitHub 和知乎上**，方便有需要的同学参考使用。希望它不仅能为本学院的后辈学子提供帮助，也能为其他院校的同学提供一些参考借鉴。
 	
-模板 Demo 请见 [PDF](https://huanyushi.github.io/assets/pdf/SYSU-SPA-LabReport-Template.pdf) ，源码可在 [release](https://github.com/huanyushi/SYSU-SPA-Labreport-Template/releases) 上下载。
+模板 Demo 请见 [PDF](https://cdn.jsdelivr.net/gh/huanyushi/blog-images@main/pdf/SYSU-SPA-LabReport-Template.pdf) ，源码可在 [release](https://github.com/huanyushi/SYSU-SPA-Labreport-Template/releases) 上下载。
 
 ## 1. 模板功能说明
 
@@ -98,7 +98,7 @@ rulesepcolor=\color{gray!30!white}
 }
 ```
 ![](images/readme2.jpg)
-1. TikZ 是一个知名的绘图宏包（不过它的文档说明高达 1000 多页，学习成本略高），在此补充了一些 TikZ 实例
+4. TikZ 是一个知名的绘图宏包（不过它的文档说明高达 1000 多页，学习成本略高），在此补充了一些 TikZ 实例
 ![](images/readme3.JPG)
 
 ## 2. 声明
@@ -107,4 +107,4 @@ rulesepcolor=\color{gray!30!white}
 * **欢迎报考中山大学物理与天文学院**。
 
 ## 3. 许可证
-该项目是在 MIT 许可下发布的。
+该项目是在 [MIT](https://github.com/huanyushi/SYSU-SPA-Labreport-Template/blob/main/LICENSE) 许可下发布的。

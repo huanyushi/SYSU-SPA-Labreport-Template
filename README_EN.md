@@ -17,7 +17,7 @@ The inspiration for this template came to me during my sophomore year when I fou
 
 As graduation approaches, I've realized that this template is still in circulation within the college. However, since the initial version was rather rudimentary and lacked certain features, **I have decided to refine and enhance it, making it available on GitHub and Zhihu for anyone who may find it useful.** I hope it will not only benefit students in our department but also provide a helpful reference for students from other institutions.
 
-You can find the [demo PDF here](https://huanyushi.github.io/assets/pdf/SYSU-SPA-LabReport-Template.pdf) and download the source code from the [release page](https://github.com/huanyushi/SYSU-SPA-Labreport-Template/releases).
+You can find the [demo PDF here](https://cdn.jsdelivr.net/gh/huanyushi/blog-images@main/pdf/SYSU-SPA-LabReport-Template.pdf) and download the source code from the [release page](https://github.com/huanyushi/SYSU-SPA-Labreport-Template/releases).
 
 ## 1. Template Functionality Overview
 
@@ -108,4 +108,4 @@ rulesepcolor=\color{gray!30!white}
 * **Welcome to apply to the School of Physics and Astronomy, Sun Yat-sen University**.
 
 ## 3. License
-This project is released under the MIT license.
+This project is released under the [MIT](https://github.com/huanyushi/SYSU-SPA-Labreport-Template/blob/main/LICENSE) license.
